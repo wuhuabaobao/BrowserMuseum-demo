@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>现代浏览器博物馆</title>
+
+		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+		<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+			<!--.container 会在左右两侧留白边，而且是自动的，不用设置。
+			container-fluid自动设置为外层视窗的100%，如果外层视窗为body，那么它将全屏显示，无论屏幕大小，并且自动实现响应式布局。
+			container 类和container-fluid类的区别体现在是否有随视口宽度改变的margin存在。 
+			container类所谓的自适应也是通过margin的改变来完成，container-fluid类的百分百宽度是指在固有的15px的padding前提下宽度
+			总是当前视口的宽度。-->
+			<div class="container">
+				<!-- 下面的navbar-header是针对移动端的三横线展示按钮的 -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				    </button>
+					<a class="navbar-brand" href="#">现代浏览器博物馆</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">综述</a>
+						</li>
+						<li>
+							<a href="#">简述</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">特点 <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<!--dropdown-header 配置导航的小标题名称-->
+								<li class="dropdown-header">Default</li>
+
+								<li>
+									<a href="#">IE</a>
+								</li>
+								<li>
+									<a href="#">Safari</a>
+								</li>
+								<!--class="divider" 配置分割线-->
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header">Other</li>
+								<li>
+									<a href="#">Chrome</a>
+								</li>
+								<li>
+									<a href="#">FireFox</a>
+								</li>
+								<li>
+									<a href="#">Opera</a>
+								</li>
+
+							</ul>
+						</li>
+						<li>
+							<a href="#">关于</a>
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</nav>
+
+		<!--最新版本的jQuery-->
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</body>
+
+</html>
