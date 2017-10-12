@@ -40,6 +40,13 @@
 			font-size: 20px;
 			line-height: 1.8;
 		}
+		
+		#carousel-example-generic{
+			margin-bottom: 60px;
+		}
+		.container .row {
+			text-align: center;
+		}
 	</style>
 
 	<body>
@@ -162,7 +169,7 @@
 					<div class="carousel-caption ">
 						<h1>Chrome</h1>
 						<p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器</p>
-						<p><a class="btn btn-lg btn-primary " href="http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html " target="_blank " role="button ">点我下载</a></p>
+						<p><a class="btn btn-lg btn-primary " href="http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html" target="_blank " role="button ">点我下载</a></p>
 					</div>
 				</div>
 				
@@ -171,18 +178,19 @@
 					<div class="carousel-caption ">
 						<h1>Chrome</h1>
 						<p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器</p>
-						<p><a class="btn btn-lg btn-primary " href="http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html " target="_blank " role="button ">点我下载</a></p>
+						<p><a class="btn btn-lg btn-primary " href="http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html" target="_blank " role="button ">点我下载</a></p>
 					</div>
 				</div>
 				
 			</div>
 
 			<!-- Controls -->
-			<a class="left carousel-control " href="#carousel-example-generic " role="button " data-slide="prev ">
+			<!--data-slide="prev " 后面带有空格效果会无效  必须删除此处prev后的空格 data-slide="prev"-->
+			<a class="left carousel-control" href="#carousel-example-generic " role="button " data-slide="prev">
 				<span class="glyphicon glyphicon-chevron-left " aria-hidden="true "></span>
 				<span class="sr-only ">上一页</span>
 			</a>
-			<a class="right carousel-control " href="#carousel-example-generic " role="button " data-slide="next ">
+			<a class="right carousel-control" href="#carousel-example-generic " role="button " data-slide="next">
 				<span class="glyphicon glyphicon-chevron-right " aria-hidden="true "></span>
 				<span class="sr-only ">下一页</span>
 			</a>
@@ -196,9 +204,20 @@
 		
 		<div class="container">
 			<div class="row">
-			  <div class="col-md-4">.col-md-4</div>
-			  <div class="col-md-4">.col-md-4</div>
-			  <div class="col-md-4">.col-md-4</div>
+			  <div class="col-md-4">
+			  	<img class="img-circle" src="img/chrome-col.jpg" alt="chrome"/>
+			  </div>
+			  
+			  <div class="col-md-4">
+			  	<img class="img-circle" src="img/firefox-col.jpg" alt="firefox"/>
+			  	
+			  </div>
+			  
+			  <div class="col-md-4">
+			  	<img class="img-circle" src="img/safari-col.jpg" alt="safari"/>
+			  	
+			  </div>
+			 
 			</div>
 		</div>
 		
@@ -206,7 +225,7 @@
 		<!--最新版本的jQuery-->
 		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js "></script>
 		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</body>
 
 </html>
