@@ -21,28 +21,24 @@
 			padding-top: 50px;
 		}
 		
-		.carousel {			
-			
+		.carousel {
 			/*最好是把轮播图片的素材图的宽高都弄成相同的像素
-			那就不需要此处的height设置了，还能达到自适应的让所有轮播图铺满整个轮播的div
+			那就不需要此处的height设置了，还能在pc端达到自适应的让所有轮播图铺满整个轮播的div
 			视频案例中是带有500px设置的*/
 			/*height: 500px;*/
-			
 			background-color: #000000;
 		}
 		
 		.carousel .item {
-			
 			/*最好是把轮播图片的素材图的宽高都弄成相同的像素
-			那就不需要此处的height设置了，还能达到自适应的让所有轮播图铺满整个轮播的div
+			那就不需要此处的height设置了，还能在pc端达到自适应的让所有轮播图铺满整个轮播的div
 			视频案例中是带有500px设置的*/
 			/*height: 500px;*/
-			
 			background-color: #000000;
 		}
-		 
+		
 		.carousel .item img {
-			width: 100%;		  
+			width: 100%;
 		}
 		
 		.carousel-caption {
@@ -51,10 +47,13 @@
 			line-height: 1.8;
 		}
 		
-		#carousel-example-generic{
+		#carousel-example-generic {
 			margin-bottom: 60px;
 		}
+		
+		
 		.container .row {
+			/*柵格化內容居中*/
 			text-align: center;
 		}
 	</style>
@@ -149,7 +148,7 @@
 					img-responsive定义的样式内容是：   display: block;
 												    max-width: 100%;
 												    height: auto;-->
-					<img src="img/chrome.jpg" alt="1" >
+					<img src="img/chrome.jpg" alt="1">
 					<div class="carousel-caption">
 						<h1>Chrome</h1>
 						<p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器</p>
@@ -159,18 +158,7 @@
 					</div>
 				</div>
 				<div class="item">
-					<img src="img/firefox.jpg" alt="2" >
-					<div class="carousel-caption">
-						<h1>Chrome</h1>
-						<p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器</p>
-						<p>
-							<a class="btn btn-lg btn-primary" href="http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html" target="_blank" role="button">点我下载</a>
-						</p>
-					</div>
-				</div>
-
-				<div class="item">
-					<img src="img/safari.jpg" alt="3" >
+					<img src="img/firefox.jpg" alt="2">
 					<div class="carousel-caption">
 						<h1>Chrome</h1>
 						<p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器</p>
@@ -181,23 +169,38 @@
 				</div>
 
 				<div class="item">
-					<img src="img/opera.jpg" alt="4" >
-					<div class="carousel-caption ">
+					<img src="img/safari.jpg" alt="3">
+					<div class="carousel-caption">
 						<h1>Chrome</h1>
 						<p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器</p>
-						<p><a class="btn btn-lg btn-primary " href="http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html" target="_blank " role="button ">点我下载</a></p>
+						<p>
+							<a class="btn btn-lg btn-primary" href="http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html" target="_blank" role="button">点我下载</a>
+						</p>
 					</div>
 				</div>
-				
+
 				<div class="item">
-					<img src="img/ie.jpg " alt="5" >
+					<img src="img/opera.jpg" alt="4">
 					<div class="carousel-caption ">
 						<h1>Chrome</h1>
 						<p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器</p>
-						<p><a class="btn btn-lg btn-primary " href="http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html" target="_blank " role="button ">点我下载</a></p>
+						<p>
+							<a class="btn btn-lg btn-primary " href="http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html" target="_blank " role="button ">点我下载</a>
+						</p>
 					</div>
 				</div>
-				
+
+				<div class="item">
+					<img src="img/ie.jpg " alt="5">
+					<div class="carousel-caption ">
+						<h1>Chrome</h1>
+						<p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器</p>
+						<p>
+							<a class="btn btn-lg btn-primary " href="http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html" target="_blank " role="button ">点我下载</a>
+						</p>
+					</div>
+				</div>
+
 			</div>
 
 			<!-- Controls -->
@@ -212,37 +215,40 @@
 			</a>
 		</div>
 
-		
-
 		<!-- 栅格化分类 -->
 
 		<div class="container">
 			<div class="row">
-			  <div class="col-md-4">
-			  	<img class="img-circle" src="img/chrome-col.jpg" alt="chrome"/>
-			  	<h2>chrome</h2>
-			  </div>
-			  
-			  <div class="col-md-4">
-			  	<img class="img-circle" src="img/firefox-col.jpg" alt="firefox"/>
-			  	<h2>firefox</h2>
-			  	
-			  </div>
-			  
-			  <div class="col-md-4">
-			  	<img class="img-circle" src="img/safari-col.jpg" alt="safari"/>
-			  	<h2>safari</h2>
-			  	
-			  </div>
-			 
+				<div class="col-md-4">
+					<img class="img-circle" src="img/chrome-col.jpg" alt="chrome" style="width: 30%;"/>
+					<h2>chrome</h2>
+					<p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器</p>
+					<p>
+						<a class="btn btn-default" href="http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html" target="_blank" role="button">点我下载</a>
+					</p>
+				</div>
+
+				<div class="col-md-4">
+					<img class="img-circle" src="img/firefox-col.jpg" alt="firefox" style="width: 30%;"/>
+					<h2>firefox</h2>
+					<p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器</p>
+					<p>
+						<a class="btn btn-default" href="http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html" target="_blank" role="button">点我下载</a>
+					</p>
+				</div>
+
+				<div class="col-md-4">
+					<img class="img-circle" src="img/safari-col.jpg" alt="safari" style="width: 30%;"/>
+					<h2>safari</h2>
+					<p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器</p>
+					<p>
+						<a class="btn btn-default" href="http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html" target="_blank" role="button">点我下载</a>
+					</p>
+
+				</div>
+
 			</div>
 		</div>
-		
-
-
-
-
-
 
 		<!--最新版本的jQuery-->
 		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js "></script>
