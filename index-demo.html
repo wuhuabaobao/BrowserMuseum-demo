@@ -21,24 +21,32 @@
 			padding-top: 50px;
 		}
 		
-		.carousel {
+		.carousel {			
+			
+			/*最好是把轮播图片的素材图的宽高都弄成相同的像素
+			那就不需要此处的height设置了，还能达到自适应的让所有轮播图铺满整个轮播的div
+			视频案例中是带有500px设置的*/
+			/*height: 500px;*/
+			
 			background-color: #000000;
-			height: 500px;
 		}
 		
 		.carousel .item {
-			height: 500px;
+			
+			/*最好是把轮播图片的素材图的宽高都弄成相同的像素
+			那就不需要此处的height设置了，还能达到自适应的让所有轮播图铺满整个轮播的div
+			视频案例中是带有500px设置的*/
+			/*height: 500px;*/
+			
 			background-color: #000000;
 		}
-		
+		 
 		.carousel .item img {
-			width: 100%;
-			height: 100%;
-			/*margin: 0 auto;*/
+			width: 100%;		  
 		}
 		
 		.carousel-caption {
-			margin-bottom: 100px;
+			margin-bottom: 20px;
 			font-size: 20px;
 			line-height: 1.8;
 		}
@@ -135,7 +143,11 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
-					<img src="img/chrome.jpg" alt="1">
+					<!--下方的img标签 在Bootstrap里默认带了img-responsive这个class
+					img-responsive定义的样式内容是：   display: block;
+												    max-width: 100%;
+												    height: auto;-->
+					<img src="img/chrome.jpg" alt="1" >
 					<div class="carousel-caption">
 						<h1>Chrome</h1>
 						<p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器</p>
@@ -145,7 +157,7 @@
 					</div>
 				</div>
 				<div class="item">
-					<img src="img/firefox.jpg" alt="2">
+					<img src="img/firefox.jpg" alt="2" >
 					<div class="carousel-caption">
 						<h1>Chrome</h1>
 						<p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器</p>
@@ -156,7 +168,7 @@
 				</div>
 
 				<div class="item">
-					<img src="img/safari.jpg" alt="3">
+					<img src="img/safari.jpg" alt="3" >
 					<div class="carousel-caption">
 						<h1>Chrome</h1>
 						<p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器</p>
@@ -167,7 +179,7 @@
 				</div>
 
 				<div class="item">
-					<img src="img/opera.jpg" alt="4">
+					<img src="img/opera.jpg" alt="4" >
 					<div class="carousel-caption ">
 						<h1>Chrome</h1>
 						<p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器</p>
@@ -176,7 +188,7 @@
 				</div>
 				
 				<div class="item">
-					<img src="img/ie.jpg " alt="5">
+					<img src="img/ie.jpg " alt="5" >
 					<div class="carousel-caption ">
 						<h1>Chrome</h1>
 						<p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器</p>
