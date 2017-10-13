@@ -51,7 +51,6 @@
 			margin-bottom: 60px;
 		}
 		
-		
 		#shangehua .row .col-md-4 {
 			/*柵格化內容居中*/
 			text-align: center;
@@ -216,14 +215,14 @@
 			<a class="right carousel-control" href="#carousel-example-generic " role="button " data-slide="next">
 				<span class="glyphicon glyphicon-chevron-right " aria-hidden="true "></span>
 				<span class="sr-only ">下一页</span>
-			</a>			
+			</a>
 		</div>
 
 		<!-- 栅格化分类 -->
 		<div class="container" id="shangehua">
 			<div class="row">
 				<div class="col-md-4">
-					<img class="img-circle" src="img/chrome-col.jpg" alt="chrome" style="width: 30%;"/>
+					<img class="img-circle" src="img/chrome-col.jpg" alt="chrome" style="width: 30%;" />
 					<h2>chrome</h2>
 					<p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器</p>
 					<p>
@@ -232,7 +231,7 @@
 				</div>
 
 				<div class="col-md-4">
-					<img class="img-circle" src="img/firefox-col.jpg" alt="firefox" style="width: 30%;"/>
+					<img class="img-circle" src="img/firefox-col.jpg" alt="firefox" style="width: 30%;" />
 					<h2>firefox</h2>
 					<p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器</p>
 					<p>
@@ -241,7 +240,7 @@
 				</div>
 
 				<div class="col-md-4">
-					<img class="img-circle" src="img/safari-col.jpg" alt="safari" style="width: 30%;"/>
+					<img class="img-circle" src="img/safari-col.jpg" alt="safari" style="width: 30%;" />
 					<h2>safari</h2>
 					<p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器</p>
 					<p>
@@ -251,18 +250,37 @@
 				</div>
 
 			</div>
-			
+
 			<!--分割线-->
 			<hr class="divider">
+			
+			<!--标签页-->			
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active">
+						<a href="#tab-chrome" aria-controls="tab-chrome" role="tab" data-toggle="tab">Chrome</a>
+					</li>
+					<li role="presentation">
+						<a href="#tab-firefox" aria-controls="tab-firefox" role="tab" data-toggle="tab">Firefox</a>
+					</li>
+					<li role="presentation">
+						<a href="#tab-safari" aria-controls="tab-safari" role="tab" data-toggle="tab">Safari</a>
+					</li>
+					<li role="presentation">
+						<a href="#tab-ie" aria-controls="tab-ie" role="tab" data-toggle="tab">IE</a>
+					</li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="tab-chrome">...</div>
+					<div role="tabpanel" class="tab-pane" id="tab-firefox">...</div>
+					<div role="tabpanel" class="tab-pane" id="tab-safari">...</div>
+					<div role="tabpanel" class="tab-pane" id="tab-ie">...</div>
+				</div>
+
+			
 		</div>
 
-		<!--标签页-->
-		<ul class="nav nav-tabs">
-		  <li role="presentation" class="active"><a href="#">Home</a></li>
-		  <li role="presentation"><a href="#">Profile</a></li>
-		  <li role="presentation"><a href="#">Messages</a></li>
-		</ul>
-		
 		<!--最新版本的jQuery-->
 		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js "></script>
 		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
