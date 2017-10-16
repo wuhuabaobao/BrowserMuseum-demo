@@ -78,7 +78,7 @@
 
 	<body>
 		<div id="top">
-			
+
 		</div>
 		<!-- 顶部导航 -->
 		<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
@@ -135,8 +135,10 @@
 
 							</ul>
 						</li>
-						<li>
-							<a href="#">关于</a>
+						<li >
+							<!--弹出框配套代码   data-toggle="modal" data-target="#about"   弹出id为about的代码-->
+							<!--加上outline: none 解决点击关闭弹窗后 连接周围有蓝色边框的问题-->  
+							<a href="#" data-toggle="modal" data-target="#about" style="outline: none;">关于</a>
 						</li>
 
 					</ul>
@@ -365,17 +367,42 @@
 					</div>
 				</div>
 			</div>
-			
-				<!--分割线-->
+
+			<!--分割线-->
 			<hr class="divider">
-			
+
 			<foot>
-				<p class="pull-right"><a href="#top">回到顶部</a></p>
+				<p class="pull-right">
+					<a href="#top">回到顶部</a>
+				</p>
 				<p>@陈波测试浏览器博物馆项目</p>
 			</foot>
-			
 
 		</div>
+
+		<!--弹出框： 用实例中的"关于"举例-->
+		<!--给这个弹出框设置一个id 方便 被调用， 比如这里是“关于”调用 所以就命名为about-->
+		<div class="modal fade" id="about" >
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<!--下面的标签是定义弹出框标题-->
+						<h4 class="modal-title">关于</h4>
+					</div>
+					<div class="modal-body">
+						<p>谷歌浏览器谷歌浏览器谷歌浏览器谷歌浏览器谷歌浏览器谷歌浏览器</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+						<!--<button type="button" class="btn btn-primary">Save changes</button>-->
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
 
 		<!--最新版本的jQuery-->
 		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js "></script>
