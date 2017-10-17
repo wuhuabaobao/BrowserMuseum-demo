@@ -25,7 +25,7 @@
 			/*最好是把轮播图片的素材图的宽高都弄成相同的像素
 			那就不需要此处的height设置了，还能在pc端达到自适应的让所有轮播图铺满整个轮播的div
 			视频案例中是带有500px设置的*/
-			/*height: 500px;*/
+			height: 500px;
 			background-color: #000000;
 		}
 		
@@ -33,7 +33,7 @@
 			/*最好是把轮播图片的素材图的宽高都弄成相同的像素
 			那就不需要此处的height设置了，还能在pc端达到自适应的让所有轮播图铺满整个轮播的div
 			视频案例中是带有500px设置的*/
-			/*height: 500px;*/
+			height: 500px;
 			background-color: #000000;
 		}
 		
@@ -67,12 +67,15 @@
 		.feature-heading {
 			font-size: 50px;
 			color: #2a6496;
-			margin-top: 120px;
+			margin-top: 40px;
 		}
 		
 		.text-muted {
 			font-size: 28px;
 			color: #999;
+		}
+		#tab-list li a {
+			padding: 10px 8px;
 		}
 	</style>
 
@@ -274,20 +277,20 @@
 			<hr class="divider">
 
 			<!--标签页-->
-			<ul class="nav nav-tabs" role="tablist" id="tab-list">
+			<ul class="nav nav-tabs" role="tablist" id="tab-list" style="text-align: center;">
 				<li role="presentation" class="active">
 					<a href="#tab-chrome" aria-controls="tab-chrome" role="tab" data-toggle="tab">Chrome</a>
 				</li>
-				<li role="presentation">
+				<li role="presentation"  >
 					<a href="#tab-firefox" aria-controls="tab-firefox" role="tab" data-toggle="tab">Firefox</a>
 				</li>
-				<li role="presentation">
+				<li role="presentation"  >
 					<a href="#tab-safari" aria-controls="tab-safari" role="tab" data-toggle="tab">Safari</a>
 				</li>
-				<li role="presentation">
+				<li role="presentation"  >
 					<a href="#tab-opera" aria-controls="tab-opera" role="tab" data-toggle="tab">Opera</a>
 				</li>
-				<li role="presentation">
+				<li role="presentation"  >
 					<a href="#tab-ie" aria-controls="tab-ie" role="tab" data-toggle="tab">IE</a>
 				</li>
 			</ul>
