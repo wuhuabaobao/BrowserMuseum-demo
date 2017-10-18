@@ -25,7 +25,7 @@
 			/*最好是把轮播图片的素材图的宽高都弄成相同的像素
 			那就不需要此处的height设置了，还能在pc端达到自适应的让所有轮播图铺满整个轮播的div
 			视频案例中是带有500px设置的*/
-			/*height: 500px;*/
+			height: 500px;
 			background-color: #000000;
 		}
 		
@@ -33,7 +33,7 @@
 			/*最好是把轮播图片的素材图的宽高都弄成相同的像素
 			那就不需要此处的height设置了，还能在pc端达到自适应的让所有轮播图铺满整个轮播的div
 			视频案例中是带有500px设置的*/
-			/*height: 500px;*/
+			height: 500px;
 			background-color: #000000;
 		}
 		
@@ -67,18 +67,21 @@
 		.feature-heading {
 			font-size: 50px;
 			color: #2a6496;
-			margin-top: 120px;
+			margin-top: 40px;
 		}
 		
 		.text-muted {
 			font-size: 28px;
 			color: #999;
 		}
+		#tab-list li a {
+			padding: 10px 8px;
+		}
 	</style>
 
 	<body>
 		<div id="top">
-			
+
 		</div>
 		<!-- 顶部导航 -->
 		<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
@@ -90,7 +93,7 @@
 			<div class="container">
 				<!-- 下面的navbar-header是针对移动端的三横线展示按钮的 -->
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-navbar" aria-expanded="false">
 				        <span class="sr-only">Toggle navigation</span>
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
@@ -99,8 +102,8 @@
 					<a class="navbar-brand" href="#">现代浏览器博物馆</a>
 				</div>
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<!-- 下面的 id="demo-navbar" 应该与上面的  data-target中的"#demo-navbar"对应上-->
+				<div class="collapse navbar-collapse" id="demo-navbar">
 					<ul class="nav navbar-nav">
 						<li class="active">
 							<a href="#">综述</a>
@@ -115,28 +118,30 @@
 								<li class="dropdown-header">Default</li>
 
 								<li>
-									<a href="#">IE</a>
+									<a href="#tab-ie">IE</a>
 								</li>
 								<li>
-									<a href="#">Safari</a>
+									<a href="#tab-safari">Safari</a>
 								</li>
 								<!--class="divider" 配置分割线-->
 								<li role="separator" class="divider"></li>
 								<li class="dropdown-header">Other</li>
 								<li>
-									<a href="#">Chrome</a>
+									<a href="#tab-chrome">Chrome</a>
 								</li>
 								<li>
-									<a href="#">FireFox</a>
+									<a href="#tab-firefox">FireFox</a>
 								</li>
 								<li>
-									<a href="#">Opera</a>
+									<a href="#tab-opera">Opera</a>
 								</li>
 
 							</ul>
 						</li>
-						<li>
-							<a href="#">关于</a>
+						<li >
+							<!--弹出框配套代码   data-toggle="modal" data-target="#about"   弹出id为about的代码-->
+							<!--加上outline: none 解决点击关闭弹窗后 连接周围有蓝色边框的问题-->  
+							<a href="#" data-toggle="modal" data-target="#about" style="outline: none;">关于</a>
 						</li>
 
 					</ul>
@@ -272,21 +277,20 @@
 			<hr class="divider">
 
 			<!--标签页-->
-			<!-- Nav tabs -->
-			<ul class="nav nav-tabs" role="tablist">
+			<ul class="nav nav-tabs" role="tablist" id="tab-list" style="text-align: center;">
 				<li role="presentation" class="active">
 					<a href="#tab-chrome" aria-controls="tab-chrome" role="tab" data-toggle="tab">Chrome</a>
 				</li>
-				<li role="presentation">
+				<li role="presentation"  >
 					<a href="#tab-firefox" aria-controls="tab-firefox" role="tab" data-toggle="tab">Firefox</a>
 				</li>
-				<li role="presentation">
+				<li role="presentation"  >
 					<a href="#tab-safari" aria-controls="tab-safari" role="tab" data-toggle="tab">Safari</a>
 				</li>
-				<li role="presentation">
+				<li role="presentation"  >
 					<a href="#tab-opera" aria-controls="tab-opera" role="tab" data-toggle="tab">Opera</a>
 				</li>
-				<li role="presentation">
+				<li role="presentation"  >
 					<a href="#tab-ie" aria-controls="tab-ie" role="tab" data-toggle="tab">IE</a>
 				</li>
 			</ul>
@@ -365,22 +369,55 @@
 					</div>
 				</div>
 			</div>
-			
-				<!--分割线-->
+
+			<!--分割线-->
 			<hr class="divider">
-			
+
 			<foot>
-				<p class="pull-right"><a href="#top">回到顶部</a></p>
+				<p class="pull-right">
+					<a href="#top">回到顶部</a>
+				</p>
 				<p>@陈波测试浏览器博物馆项目</p>
 			</foot>
-			
 
 		</div>
+
+		<!--弹出框： 用实例中的"关于"举例-->
+		<!--给这个弹出框设置一个id 方便 被调用， 比如这里是“关于”调用 所以就命名为about-->
+		<div class="modal fade" id="about" >
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<!--下面的标签是定义弹出框标题-->
+						<h4 class="modal-title">关于</h4>
+					</div>
+					<div class="modal-body">
+						<p>谷歌浏览器谷歌浏览器谷歌浏览器谷歌浏览器谷歌浏览器谷歌浏览器</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+						<!--<button type="button" class="btn btn-primary">Save changes</button>-->
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
 
 		<!--最新版本的jQuery-->
 		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js "></script>
 		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(function  () {
+				$("#demo-navbar .dropdown-menu a").click(function  () {
+					var href=$(this).attr("href");
+					$("#tab-list a[href='" + href + "']").tab("show");
+				});
+			});
+		</script>
 	</body>
 
 </html>
