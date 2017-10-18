@@ -25,7 +25,7 @@
 			/*最好是把轮播图片的素材图的宽高都弄成相同的像素
 			那就不需要此处的height设置了，还能在pc端达到自适应的让所有轮播图铺满整个轮播的div
 			视频案例中是带有500px设置的*/
-			height: 500px;
+			/*height: 500px;*/
 			background-color: #000000;
 		}
 		
@@ -33,9 +33,14 @@
 			/*最好是把轮播图片的素材图的宽高都弄成相同的像素
 			那就不需要此处的height设置了，还能在pc端达到自适应的让所有轮播图铺满整个轮播的div
 			视频案例中是带有500px设置的*/
-			height: 500px;
+			/*height: 500px;*/
 			background-color: #000000;
 		}
+
+		
+
+		
+		
 		
 		.carousel .item img {
 			width: 100%;
@@ -55,6 +60,26 @@
 			/*柵格化內容居中*/
 			text-align: center;
 		}
+		
+		
+		/*手机端的轮播布局样式设置*/
+		@media only screen and (max-width: 1279px) {
+			
+				.carousel,.carousel .item {
+					height: 120px;					
+				}
+				/*手机端关闭轮播上的文字和下载按钮*/
+				.carousel-caption{
+					display: none;
+				}
+				
+				.carousel .item img {
+					width: 100%;
+					height: 100%;
+				}
+			
+		}
+		
 		
 		hr.divider {
 			margin: 40px 0;
