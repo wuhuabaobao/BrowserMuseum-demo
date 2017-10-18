@@ -70,12 +70,12 @@
 				}
 				/*手机端关闭轮播上的文字和下载按钮*/
 				.carousel-caption{
-					display: none;
+				display: none;
 				}
 				
 				.carousel .item img {
-					width: 100%;
-					height: 100%;
+					width: 100%
+					height: 5rem;
 				}
 			
 		}
@@ -103,8 +103,22 @@
 			padding: 10px 8px;
 		}
 	</style>
-
+	<script type="text/javascript">
+//		alert(window.innerWidth);
+	</script>
+	<script type="text/javascript">
+	
+		var html = document.getElementsByTagName('html')[0]; 
+		//屏幕的宽度（兼容处理）
+		var w = document.documentElement.clientWidth || document.body.clientWidth;
+//		alert(w);
+		//750这个数字是根据你的设计图的实际大小来的，所以值具体根据设计图的大小
+		html.style.fontSize = w / 7.5*2 + "px";
+	</script>
 	<body>
+		<!--<p style="font-size:1rem">测试2</p>
+		<p style="font-size:100px">测试22</p>-->
+	
 		<div id="top">
 
 		</div>
